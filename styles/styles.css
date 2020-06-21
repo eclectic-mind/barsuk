@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'BancoDi';
+	src: url('../fonts/bancodi_.eot');
+	src: url('../fonts/bancodi_.eot') format('embedded-opentype'),
+    	 url('../fonts/bancodi_.woff') format('woff'),
+    	 url('../fonts/bancodi_.ttf') format('truetype'),
+         url('../fonts/bancodi_.svg#BancoDi') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {margin:0; padding:0; color:#333333;  font-family:'Tahoma', Arial, Helvetica, sans-serif; 
+font-size:18px;  width: 100%; line-height:24px;}
+body {background:#ffffff;}
+div {display:block; width:100%;}
+.contain-inner, .row {max-width:960px !important;}
+
+.for-ie {display: none;}
+
+/* grid  */
+
+header {background-color:#ffffff; height:78px;}
+footer { padding-top:25px; 
+	background-color: #404040;
+	background: -webkit-linear-gradient(top, #404040, #000000);
+	background:         linear-gradient(to bottom, #404040, #000000);
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#404040', endColorstr='#000000');
+	-pie-background: 	linear-gradient(to bottom, #404040, #000000);
+    behavior: url(PIE.htc);
+	height:140px;}
+.container {max-width:1200px; margin:0 auto}
+.promo {min-height:534px;  background-image:url(../img/promo-bg.jpg); background-size: cover; background-repeat: no-repeat; background-position: top left; 
+webkit-box-shadow: 0px 16px 9px -10px rgba(0, 0, 0, 0.8) inset;
+-moz-box-shadow:    0px 16px 9px -10px rgba(0, 0, 0, 0.8) inset;
+box-shadow:         0px 16px 9px -10px rgba(0, 0, 0, 0.8) inset;}
+.services{min-height:1090px; padding: 1.5rem 0; background-image:url(../img/services-bg.jpg); background-size: cover; 
+background-repeat: no-repeat; background-position: top left; 
+webkit-box-shadow: 0px 16px 9px -10px rgba(0, 0, 0, 1) inset;
+-moz-box-shadow:    0px 16px 9px -10px rgba(0, 0, 0, 1) inset;
+box-shadow:         0px 16px 9px -10px rgba(0, 0, 0, 1) inset;}
+.partnership {padding: 1rem 0 2rem 0; background:#ffffff; -webkit-box-shadow: inset 0px 16px 9px -10px rgba(50, 50, 50, 0.68);
+-moz-box-shadow:    inset 0px 16px 9px -10px rgba(50, 50, 50, 0.68);
+box-shadow:         inset 0px 16px 9px -10px rgba(50, 50, 50, 0.68);
+border-color: #404040;
+border-width: 0 1px;
+border-style: solid;}
+
+
+/* elements */
+h2 {letter-spacing: -0.08rem;}
+header h1, header h4 {color:#666666;}
+header h4 {font-size:1rem; margin-top: 35px;}
+header h1 {font-size:36px; font-family:'BancoDi',Sans-Serif; text-transform:none; margin-left: 160px;
+margin-top: 20px;}
+
+.logo {width:188px; height:120px; background:url(../img/logo-bg.png) no-repeat bottom center; background-size:contain; position:absolute; -webkit-box-shadow: 0px 10px 2px -5px rgba(0, 0, 0, 1);
+-moz-box-shadow:    0px 10px 2px -5px rgba(0, 0, 0, 1);
+box-shadow:         0px 10px 2px -5px rgba(0, 0, 0, 1);}
+.logo a {width:144px; height:91px; background:url(../img/logo.png) no-repeat bottom center; display:block; background-size:contain;    
+position: relative;
+top: 15px;
+left: 20px;}
+header .logo {margin-top: -7px; }
+footer .logo {margin-top: -100px;}
+.slogan {background: rgba(0, 0, 0, 0.37); height: 68px; }
+.slogan h1 {color:#fddd02; font-weight: bold; text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);;
+font-style: italic; font-size: 25px;
+margin: 20px 45px 10px;}
+.promo h4 {color:#ffffff; font-size:1.0rem !important; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75); }
+.promo .collapse {background:url(../img/tools.png) no-repeat bottom left; }
+.info {background:url(../img/arrow.png) no-repeat 210px 100px; height:475px;} 
+.discount {}
+.discount h1, .discount h3 {color:#ffffff; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);}
+.discount h1 {font-weight: bold;
+font-size: 1.9rem; line-height: 1.9rem;}
+.discount h3 {text-transform: none;
+font-size: 1.3rem; position:relative; z-index:2;}
+.discount h3.str {z-index:1; font-weight:bold;}
+.discount h3.str span {background:url(../img/star.png) no-repeat center center; padding:40px 25px; }
+.counter {margin:1.8rem 0 3.5rem 0; width:305px;}
+.make-request {background: rgba(0, 0, 0, 0.3); padding-top: 1rem; width:305px;}
+.services h2 {color:#ffffff; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75); }
+.button {background-color:#005b7d; background: -webkit-linear-gradient(top, #005b7d, #002143);
+	background:         linear-gradient(to bottom, #005b7d, #002143);
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#005b7d', endColorstr='#002143');
+	-pie-background: 	linear-gradient(to bottom, #005b7d, #002143);
+    behavior: url(PIE.htc);
+	font-size:18px; text-transform: uppercase; border:none; -webkit-box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.5);
+-moz-box-shadow:    3px 3px 7px 0px rgba(0, 0, 0, 0.5);
+box-shadow:         3px 3px 7px 0px rgba(0, 0, 0, 0.5);}
+
+ul.features {list-style:none; margin: 0px 0 0 1.2rem; padding:0;}
+ul.features li {margin: 1.8rem 0px; padding:0 0 0 28px; background-image:url(../img/bull.png); background-position: left top; background-repeat: no-repeat;}
+ul.features li a { text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75); text-transform: uppercase; }
+ul.features li:hover {background-image:url(../img/bull-yellow.png); }
+ul.features li:hover a {color:#fddd02; }
+
+.services ol {counter-reset: myCounter;}
+.services ol li {display:inline-table; border:solid 1px #666666; width:225px; width:225px; height:285px; margin: 0 0px 7px 0;
+background-color:#000000; background: -webkit-linear-gradient(top, #666666, #000000);
+	background:         linear-gradient(to bottom, #666666, #000000);
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#666666', endColorstr='#000000');
+	-pie-background: 	linear-gradient(to bottom, #666666, #000000);
+    behavior: url(PIE.htc);}
+.services ol li:before {counter-increment: myCounter;
+content: counter(myCounter, decimal);
+color: #ffffff;
+display: block;
+text-align: left;
+margin: -22px -14px;
+line-height: 40px;
+font-size: 30px;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+font-weight: bold;}
+.services ol li .icon {border:solid 2px #ffffff; width:156px; height:156px; background-size:cover; background-position:top center; background-repeat:no-repeat; display:block; -webkit-box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.7);
+-moz-box-shadow:    3px 3px 7px 0px rgba(0, 0, 0, 0.7);
+box-shadow:         3px 3px 7px 0px rgba(0, 0, 0, 0.7);
+margin-top:20px;
+transition:all 0.25s linear;}
+.services ol li span.serv1 {background-image:url(../img/step1.jpg);}
+.services ol li span.serv2 {background-image:url(../img/step2.jpg);}
+.services ol li span.serv3 {background-image:url(../img/step3.jpg);}
+.services ol li span.serv4 {background-image:url(../img/step4.jpg);}
+.services ol li span.serv5 {background-image:url(../img/step5.jpg);}
+.services ol li span.serv6 {background-image:url(../img/step6.jpg);}
+.services ol li span.serv7 {background-image:url(../img/step7.jpg);}
+.services ol li span.serv8 {background-image:url(../img/step8.jpg);}
+.services ol li span.serv9 {background-image:url(../img/step9.jpg);}
+.services ol li span.serv10 {background-image:url(../img/step10.jpg);}
+span.serv-text {color:#ffffff; font-size: 13px;
+line-height: 20px;
+
+display: block; width:190px; position:absolute; top:205px;}
+.services ol li:hover .icon {width: 190px;
+height: 190px;
+margin-top: -10px !important;
+margin-left: 0px;
+margin-right:-10px;
+}
+.services ol li:hover span.serv-text {}
+
+.partnership ul {list-style:none;  padding:0; }
+.partnership ul li {display:block; float:left; width:260px; background:url(../img/arrow-dark.png) 170px 170px no-repeat; margin-bottom: 2rem;}
+.partnership ul li.step4 {background:none; width:172px;}
+.partnership ul li span.text {text-transform: uppercase; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75); width:172px; display:block; float:left; }
+.partnership ul li span.icon {background-color:#333333; background-position:center center; background-repeat:no-repeat; width:172px; height:172px; display:block;}
+
+.step1 .icon {background-image:url(../img/icon1.png)}
+.step2 .icon {background-image:url(../img/icon2.png)}
+.step3 .icon {background-image:url(../img/icon3.png)}
+.step4 .icon {background-image:url(../img/icon4.png)}
+
+
+.copyrights {color:#ffffff; font-size:14px;}
+
+/* counter */
+#clou_xs {position:relative; width:260px; height:60px;} 
+#clock {width:260px; height:60px; text-align:center; color:#333333;} 
+#clockall {margin: 0px auto 10px auto; width:258px; height:60px;}
+#RemainsFullDays, #RemainsFullHours, #RemainsMinutes, #lastSec {position:absolute; top:0px;  font-size:36px; color: #333333; line-height: 58px;
+border-radius:5px; background:url(../img/counter-bg.gif) top center repeat-x; background-size:contain; width:58px; height:58px; -webkit-box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.5);
+-moz-box-shadow:    3px 3px 7px 0px rgba(0, 0, 0, 0.5);
+box-shadow:         3px 3px 7px 0px rgba(0, 0, 0, 0.5);} 
+#RemainsFullDays { left:0px; }
+#RemainsFullHours { left:66px; }
+#RemainsMinutes { left:132px; }
+#lastSec {left:198px;}
+.Rem {font-size:11px; font-weight:normal; color:#333333; display:block; clear:both; position:absolute; top:-23px; font-weight:bold;} 
+#RemainsFullDays .Rem {left:15px;}
+#RemainsFullHours .Rem { left:12px; }
+#RemainsMinutes .Rem { left:12px; }
+#lastSec .Rem {left:9px;}
+
