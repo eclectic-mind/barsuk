@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Клининговая компания "Барсук"</title>
+    <link rel="stylesheet" href="styles/foundation.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+     <link rel="stylesheet" href="styles/styles.css" />
+     <link rel="stylesheet" href="styles/animate.css" />
+     <script  type="text/javascript" src="js/vendor/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/foundation.min.js"></script>
+<script type='text/javascript'> 
+//<![CDATA[ 
+function fulltime () { 
+var time=new Date(); 
+var newYear=new Date("12,25,2015,20:00:00"); 
+var totalRemains=(newYear.getTime()-time.getTime()); 
+if (totalRemains>1){ 
+var RemainsSec = (parseInt(totalRemains/1000)); 
+var RemainsFullDays=(parseInt(RemainsSec/(24*60*60))); 
+var secInLastDay=RemainsSec-RemainsFullDays*24*3600; 
+var RemainsFullHours=(parseInt(secInLastDay/3600)); 
+if (RemainsFullHours<10){RemainsFullHours="0"+RemainsFullHours}; 
+var secInLastHour=secInLastDay-RemainsFullHours*3600; 
+var RemainsMinutes=(parseInt(secInLastHour/60)); 
+if (RemainsMinutes<10){RemainsMinutes="0"+RemainsMinutes}; 
+var lastSec=secInLastHour-RemainsMinutes*60; 
+if (lastSec<10){lastSec="0"+lastSec}; 
+document.getElementById("RemainsFullDays").innerHTML=RemainsFullDays+"<span class='Rem'>дней</span>"; 
+document.getElementById("RemainsFullHours").innerHTML=RemainsFullHours+"<span class='Rem'>часов</span>"; 
+document.getElementById("RemainsMinutes").innerHTML=RemainsMinutes+"<span class='Rem'>минут</span>"; 
+document.getElementById("lastSec").innerHTML=lastSec+"<span class='Rem'>секунд</span>"; <!-- highslide start --> 
+setTimeout('fulltime()',10)  
+} 
+else{ 
+document.getElementById("clock").innerHTML=""; 
+} 
+} 
+//]]> 
+</script> 
+
+<!--[if IE 8]>
+     <link href="styles/ie.css" rel="stylesheet" type="text/css" media="screen">
+<![endif]-->
+<!--[if IE 7]>
+     <link href="styles/ie.css" rel="stylesheet" type="text/css" media="screen">
+<![endif]-->
+<!--[if IE 6]>
+     <link href="styles/ie.css" rel="stylesheet" type="text/css" media="screen">
+<![endif]-->
+
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+
+</head>
+
+<body>
+<header><div class="contain-inner float-center">
+<div class="row">
+<div class="columns large-8 company-name text-left"><h1>Клининговая компания "Барсук"</h1></div>
+<div class="columns large-4 since text-center"><h4>Работаем с 2014 года</h4></div>
+<div class="logo"><a href="/"></a></div></div>
+</div>
+</header>
+
+<div class="container">
+
+<div class="promo">
+<div class="slogan text-right"><div class="row"><h1 class="zoomIn wow">Уборка офисных помещений в Санкт-Петербурге</h1></div></div>
+<div class="row collapse">
+<div class="columns large-8 medium-8 small-12 info">
+<div class="columns large-6 discount"><h1>Акция!!!</h1>
+<h3>При заказе уборки<br>до 25 декабря</h3>
+<h3 class="str">скидка <span>20%</span></h3></div>
+<div class="columns large-6"><div class="counter text-center">
+
+
+
+<div id="clockall">
+<div id="clou_xs"> 
+<div id="clock"><br /> 
+<span id="RemainsFullDays"></span> 
+<span id="RemainsFullHours"></span> 
+<span id="RemainsMinutes"></span> 
+<span id="lastSec"></span>  
+<script type="text/javascript">fulltime();</script>  
+</div> 
+</div> </div>
+
+
+
+<div class="row column large-centered"><a href="#" class="button large-11">Получить скидку</a></div></div>
+<div class="make-request text-center"><h4>Форма заказа</h4>
+<form>
+<div class="row column large-centered"><input type="text" id="fio" placeholder="Ваше имя" /></div><div class="row column large-centered">
+<input type="text" id="phone" placeholder="Телефон" /></div>
+<div class="row column large-centered"><a href="javascript:alert('Спасибо, Ваши данные приняты.')" class="button large-11">Отправить заявку</a></div>
+</form>
+</div>
+</div>
+</div>
+<div class="columns large-4 medium-4 small-12">
+<ul class="features">
+<li><a href="#" class="feature1">Быстро</a></li>
+<li><a href="#" class="feature2">Качественно</a></li>
+<li><a href="#" class="feature3">Профессиональное оборудование</a></li>
+<li><a href="#" class="feature4">Скидки при долгосрочном сотрудничестве</a></li>
+<li><a href="#" class="feature5">Проверенные сотрудники</a></li>
+<li><a href="#" class="feature6">Индивидуальный подход</a></li></ul></div>
+</div>
+</div>
+
+<div class="services">
+<div class="row"><div class="columns large-12 small-12 medium-12 text-center"><h2>Что входит в уборку?</h2></div></div>
+<div class="row text-center">
+<ol class="">
+<li class="callout text-center"><span class="icon serv1 float-center"></span><span class="serv-text">Мытьё стандартных окон (+ рамы, подоконники, откосы и т.д.)</span></li>
+<li class="callout text-center"><span class="icon serv2 float-center"></span><span class="serv-text">Удаление пыли и грязи с полов, стен, потолка</span></li>
+<li class="callout text-center"><span class="icon serv3 float-center"></span><span class="serv-text">Мытьё отопительных труб, батарей</span></li>
+<li class="callout text-center"><span class="icon serv4 float-center"></span><span class="serv-text">Удаление пыли с дверных блоков, внешних поверхностей мебели и предметов интерьера</span></li>
+<li class="callout text-center"><span class="icon serv5 float-center"></span><span class="serv-text">Влажная и сухая протирка осветительных приборов малых размеров, оргтехники </span></li>
+<li class="callout text-center"><span class="icon serv6 float-center"></span><span class="serv-text">Мойка зеркал</span></li>
+<li class="callout text-center"><span class="icon serv7 float-center"></span><span class="serv-text">Сухая чистка ковров и мягкой мебели пылесосом</span></li>
+<li class="callout text-center"><span class="icon serv8 float-center"></span><span class="serv-text">Мытьё туалетов</span></li>
+<li class="callout text-center"><span class="icon serv9 float-center"></span><span class="serv-text">Влажная уборка полов с твёрдым покрытием (паркет, ламинат, линолеум, плитка)</span></li>
+<li class="callout text-center"><span class="icon serv10 float-center"></span><span class="serv-text">Вынос мусора</span></li>
+</ol>
+</div>
+<div class="row text-center"><a href="#" class="button large-3">Заказать</a></div>
+</div>
+
+<div class="partnership">
+<div class="row"><div class="columns large-12 small-12 medium-12 text-center"><h2>Простое сотрудничество</h2></div></div>
+<div class="row">
+<ul class="columns large-12 large-centered"><li class="step1"><span class="icon callout"></span><span class="text text-center">Оставляете заявку</span></li>
+<li class="step2"><span class="icon callout"></span><span class="text text-center">Получаете консультацию менеджера</span></li>
+<li class="step3"><span class="icon callout"></span><span class="text text-center">Бригада выезжает</span></li>
+<li class="step4"><span class="icon callout"></span><span class="text text-center">Принимаете работу</span></li>
+</ul>
+</div>
+<div class="row text-center"><a href="#" class="button large-3">Отправить заявку</a></div>
+</div>
+
+</div>
+
+<footer>
+
+<div class="row copyrights">
+<div class="text-center columns large-12 small-12 medium-12">Copyright &copy;&nbsp;2015 Клининговая компания "Барсук"</div><div class="logo"><a href="/"></a></div>
+</div>
+</footer>
+
+    <div class="for-ie">
+    
+<div class="content-ie">
+<a class="close" href="#"></a>
+<img src="img/ie-logo.jpg" style="float:left; margin-right:20px;">
+<h3>Внимание!</h3>
+<h4>Вы используете устаревший браузер Internet Explorer.</h4>  
+<p>ghfghgfH</p>
+<h4>Почему нужно поменять браузер на другой?</h4>
+<p>cfgfh</p>
+<br clear="all">
+<h4 style="text-align:left"><a href="#">Обновить Internet Explorer</a></h4>
+<h4 style="text-align:right"><a href="#">Вернуться на сайт</a></h4>
+   </div></div>
+</body>
+</html>
